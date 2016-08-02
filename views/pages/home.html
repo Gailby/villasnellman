@@ -7,11 +7,11 @@
 {% endblock %}
 
 {% block main %}
-  <div class="block content">
+  <!--div class="block content">
     <div class="inner">
-      <div class="demo-pageheader">
-        <img class="demo-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
-        {{ aposArea(page, 'homepageText', {
+      <div class="demo-pageheader"-->
+        <!--img class="demo-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe"-->
+       <!-- {{ aposArea(page, 'homepageText', {
           textOnly: true,
           styles: [
             { value: 'p', label: 'Text' },
@@ -19,10 +19,9 @@
           ]
         }) }}
       </div>
-    </div>
-    <div class="demo-workspaces-marquee"></div>
-    <div class="block content--bottom">
-      <div class="inner demo-pageheader">
+    </div-->
+    <div class="demo-workspaces-marquee">
+    	<div class="inner demo-pageheader">
         {{ aposArea(page, 'main', {
           controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video'],
           styles: [
@@ -33,6 +32,20 @@
           lockups: ['left', 'right']
         }) }}
       </div>
+    </div>
+    <div class="block content--bottom">
+      <div class="inner">
+	      <div class="demo-pageheader">
+	        <!--img class="demo-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe"-->
+	        {{ aposArea(page, 'homepageText', {
+	          textOnly: true,
+	          styles: [
+	            { value: 'p', label: 'Text' },
+	            { value: 'h3', label: 'Title' }
+	          ]
+	        }) }}
+	      </div>
+	    </div>
     </div>
   </div>
 
